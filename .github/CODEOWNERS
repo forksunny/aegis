@@ -1,0 +1,13 @@
+# Every path has an owner. Last matching pattern wins, so order matters:
+# general rules first, specific overrides below.
+
+* @forksunny
+
+# Infrastructure and CI change blast radius, not just behaviour —
+# in a team these would belong to a platform group, not the service owners.
+/infra/        @forksunny
+/.github/      @forksunny
+
+# Money and audit paths. Separate entry so the ownership is explicit
+# in the file rather than implied by the catch-all above.
+/services/payment-service/  @forksunny
