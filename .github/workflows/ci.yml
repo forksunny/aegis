@@ -27,8 +27,5 @@ jobs:
           distribution: temurin
           cache: maven
 
-      - name: Show toolchain
-        run: |
-          java -version
-          mvn -version
-          docker --version
+      - name: Build and test
+        run: ./mvnw -B -ntp verify
