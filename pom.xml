@@ -24,6 +24,7 @@
 
     <modules>
         <module>services/quote-service</module>
+        <module>services/policy-service</module>
     </modules>
 
     <build>
